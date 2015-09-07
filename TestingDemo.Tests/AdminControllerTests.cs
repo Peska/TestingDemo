@@ -21,8 +21,10 @@ namespace TestingDemo.Tests
 			string oldLogin = user.LoginName;
 			string newLogin = "Joe";
 
+			// Action
 			target.ChangeLoginName(oldLogin, newLogin);
 
+			// Assert
 			Assert.AreEqual(newLogin, user.LoginName);
 			Assert.IsTrue(repository.DidSubmitChanges);
 		}
