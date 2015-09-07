@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TestingDemo.Models;
 
 namespace TestingDemo.Tests
@@ -10,6 +7,7 @@ namespace TestingDemo.Tests
 	class FakeRepository : IUserRepository
 	{
 		public List<User> Users = new List<User>();
+
 		public bool DidSubmitChanges = false;
 
 		public void Add(User user)
